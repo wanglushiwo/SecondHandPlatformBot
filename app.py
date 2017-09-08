@@ -47,7 +47,7 @@ def processRequest(req):
 
 
 def makeWebhookResult(req):
-    
+    print("Accessing:")
     result = req.get("result")
     parameters = result.get("parameters")
     nric = parameters.get("NRIC")
