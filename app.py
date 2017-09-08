@@ -39,6 +39,7 @@ def webhook():
 
 
 def processRequest(req):
+    print("Accessing processRequest")
     if req.get("result").get("action") != "validatenric":
         return {}
     
@@ -47,7 +48,7 @@ def processRequest(req):
 
 
 def makeWebhookResult(req):
-    print("Accessing:")
+    print("Accessing makeWebhookResult")
     result = req.get("result")
     parameters = result.get("parameters")
     nric = parameters.get("NRIC")
