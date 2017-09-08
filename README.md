@@ -8,3 +8,5 @@ The services takes the `NRIC` parameter from the action, are returns a validity 
 
 The service packs the result in the Api.ai webhook-compatible response JSON and returns it to Api.ai.
 
+testing
+
