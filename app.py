@@ -28,7 +28,8 @@ def webhook():
     print("Wang lu");
     print("Request:")
     print(json.dumps(req, indent=4))
-
+    with open('data.txt', 'w') as outfile:
+        json.dump(req, outfile)
     res = processRequest(req)
 
     res = json.dumps(res, indent=4)
